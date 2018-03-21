@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto-light-webfont.eot");
+url("fonts/") format("woff");
+url("fonts/roboto-light-webfont.woff2") format("woff2");
+url("../fonts/roboto-light-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -47,37 +58,46 @@ table {
     border-spacing: 0;
 }
 
-@font-face {
-    font-family: "Roboto Light";
-    src: url("../fonts/roboto-light-webfont.eot");
-    url("../fonts/roboto-light-webfont.woff") format("woff"),
-    url("../fonts/roboto-light-webfont.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+
 
 body{
-    font-family: "Roboto Light";
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
     outline: none;
     margin:0;
-    background-color: #FFFFFF;
+    background-color: #242b2e;
+
 }
 
 .container{
-    max-width: 1170px;
-    position: relative;
+    max-width: 1920px;
     margin: 0;
+    background-color: #242b2e;
+}
 
+.mainContent{
+    display: flex;
 }
 
 .leftSideSection{
+
     float: left;
-    width: 25%
+    width: 15.625%;
+    box-shadow: 0 0 55px 35px rgb(78, 78, 78);
+    -webkit-box-shadow:0 0 55px 35px rgb(78, 78, 78);
+    -moz-box-shadow: 0 0 55px 35px rgb(78, 78, 78);;
+    position: relative;
+
+}
+
+.leftSideContent{
+
+
+
 }
 
 .rightSideSection{
-    width: 75%;
+    width: 84.375%;
     display: flex;
     margin: 0;
     flex-wrap: wrap;
@@ -91,4 +111,64 @@ body{
 
 .imageSection{
     line-height: 0;
+    width: 25%;
 }
+
+.imageSection img{
+    width:100%;
+}
+
+.logoSection{
+    text-align: center;
+    padding: 25px 0;
+    background-color: #ffffff;
+}
+
+.logoSection a{
+    display: inline-block;
+}
+
+.logoSection a:hover{
+    opacity: 0.6;
+}
+
+.navigation li {
+
+    padding: 31px 0;
+    margin-bottom: 1px;
+    background: -moz-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
+    background: -webkit-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
+    background: -ms-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+
+}
+
+.navigation li:hover{
+    background:linear-gradient(to left, rgb(34, 173, 172), rgb(35, 174, 172)));
+    background: #23AEAC;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: #ffffff;
+    float: right;
+    margin-right: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
