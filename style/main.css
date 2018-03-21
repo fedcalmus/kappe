@@ -83,9 +83,9 @@ body{
 
     float: left;
     width: 15.625%;
-    box-shadow: 0 0 55px 35px rgb(78, 78, 78);
-    -webkit-box-shadow:0 0 55px 35px rgb(78, 78, 78);
-    -moz-box-shadow: 0 0 55px 35px rgb(78, 78, 78);;
+    box-shadow: 0 0 55px 35px #0c0c0cd6;
+    -webkit-box-shadow:0 0 55px 35px #0c0c0cd6;
+    -moz-box-shadow: 0 0 55px 35px #0c0c0cd6;
     position: relative;
 
 }
@@ -198,6 +198,7 @@ body{
 
     padding-top:35px;
     padding-bottom: 30px;
+    cursor:pointer;
 }
 
 .filterOptions li{
