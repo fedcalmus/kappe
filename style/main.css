@@ -146,7 +146,7 @@ body{
 }
 
 .navigation li:hover{
-    background:linear-gradient(to left, rgb(34, 173, 172), rgb(35, 174, 172)));
+    background:linear-gradient(to left, rgb(34, 173, 172), rgb(35, 174, 172));
     background: #23AEAC;
 }
 
@@ -156,7 +156,7 @@ body{
     float: right;
     margin-right: 25px;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 18px;
     text-transform: uppercase;
 
@@ -168,7 +168,57 @@ body{
 }
 
 
+.accordion{
+    padding-top: 25px;
+    text-align: right;
+    margin-right: 25px;
+}
+
+.filters {
+
+    border: none;
+    background-color: transparent;
+    color: #1ab5b3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:19px;
+    outline: none;
+}
+
+.filterSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.hideFilterSection{
+    display:none;
+}
+
+.filterOptions {
+
+    padding-top:35px;
+    padding-bottom: 30px;
+}
+
+.filterOptions li{
+
+    padding-bottom:15px;
+
+}
 
 
+.filterOptions li a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:#6b7072;
+    font-size:13px;
+    text-decoration: none;
+}
 
+.filterOptions li a:hover{
+    color:#ffffff;
+}
 
+.filterOptions .filterActive{
+    color:#ffffff;
+}
