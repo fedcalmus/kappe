@@ -121,7 +121,7 @@ body{
     height: 100%;
     text-align: center;
     visibility: hidden;
-    line-height: 20px;
+    line-height: 26px;
     background-color: #2db8b7;
     transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -311,6 +311,10 @@ body{
     -o-transition:  0.3s ease-out;
 }
 
+.socialIcons li img{
+    width: 100%;
+}
+
 .socialIcons li a:hover{
     opacity: 0.8;
 }
@@ -321,39 +325,48 @@ body{
     text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1360px){
+
+    .socialIcons, .copyright{
+        text-align: center;
+    }
 
 
-@media only screen and (max-width: 1360px) and (min-width: 768px) {
 
+}
+
+@media only screen and (max-width: 1370px) and (min-width: 768px) {
+
+    .socialIcons, .copyright{
+        text-align: center;
+    }
     .onHoverContent .devText{
         padding: 5px 0;
     }
 
     .arrow{
-        padding-top: 25px;
+        padding-top: 5px;
     }
 
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
 
     .imageSection{
         width:33.33333%;
     }
 
+
+
     .onHoverContent .devText{
         padding: 5px 0;
     }
 
     .arrow{
-        padding-top: 25px;
+        padding-top: 5px;
     }
-    .leftSideSection{
-        width:20%;
-    }
-    .rightSideSection{
-        width:80%;
-    }
+
+
 }
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
@@ -366,7 +379,7 @@ body{
     }
 
     .arrow{
-        padding-top: 25px;
+        padding-top: 5px;
     }
     .leftSideSection{
         width:25%;
@@ -385,6 +398,6 @@ body{
     }
     .rightSideSection{
     width:70%;
-        
+
     }
 }
