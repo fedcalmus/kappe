@@ -39,9 +39,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
@@ -69,38 +72,30 @@ body{
 
 }
 
-.container{
-    max-width: 1920px;
+.mainContent{
+    display: flex;
     margin: 0;
     background-color: #242b2e;
 }
 
-.mainContent{
-    display: flex;
-}
-
 .leftSideSection{
-
     float: left;
     width: 15.625%;
     box-shadow: 0 0 55px 35px #0c0c0cd6;
     -webkit-box-shadow:0 0 55px 35px #0c0c0cd6;
     -moz-box-shadow: 0 0 55px 35px #0c0c0cd6;
     position: relative;
-
+    z-index: 1;
 }
 
-.leftSideContent{
-
-
-
-}
 
 .rightSideSection{
     width: 84.375%;
     display: flex;
     margin: 0;
     flex-wrap: wrap;
+    align-content: flex-start;
+
 }
 
 .clearAfter::after{
@@ -112,10 +107,57 @@ body{
 .imageSection{
     line-height: 0;
     width: 25%;
+    position: relative;
+
 }
 
-.imageSection img{
-    width:100%;
+.imageSection:hover .onHover{
+    visibility: visible;
+    opacity: 0.9;
+
+}
+
+.onHover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    line-height: 20px;
+    background-color: #2db8b7;
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+
+.onHoverContent{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.onHoverContent .appDesign{
+    font-size: 26px;
+}
+
+.onHoverContent .devText{
+    padding:24px 0;
+    font-size:12px;
+    display: inline-block;
+    border-bottom: 1px solid #ffffff;
 }
 
 .logoSection{
@@ -126,6 +168,9 @@ body{
 
 .logoSection a{
     display: inline-block;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition:  0.3s ease-out;
 }
 
 .logoSection a:hover{
@@ -136,8 +181,20 @@ body{
     width:100%;
 }
 
-.navigation li {
+.arrow{
+    display: inline-block;
+    padding-top: 25px;
+    cursor:pointer;
+}
 
+
+.arrowSection a{
+    display: inline-block;
+}
+
+
+
+.navigation li {
     padding: 31px 0;
     margin-bottom: 1px;
     background: -moz-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
@@ -146,7 +203,6 @@ body{
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
-
 }
 
 .navigation li:hover{
@@ -163,7 +219,6 @@ body{
     font-weight: 300;
     font-size: 18px;
     text-transform: uppercase;
-
 }
 
 .navigation{
@@ -171,19 +226,19 @@ body{
     flex-direction: column;
 }
 
+.accordionSection{
+    margin-right:25px;
+    text-align: right;
+}
 
 .accordion{
     padding-top: 25px;
-    padding-right: 25px;
-    text-align: right;
     border-bottom: 1px solid #1e282b;
-
-
 }
 
 .filters {
 
-    border: none;
+    border: 1px solid transparent;
     background-color: transparent;
     color: #1ab5b3;
     font-family: 'Roboto', sans-serif;
@@ -191,11 +246,22 @@ body{
     font-size:19px;
     outline: none;
     cursor:pointer;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition:  0.3s ease-out;
+}
+
+.filters:hover{
+    border: 1px solid #1ab5b3;;
 }
 
 .filterSection{
     display: flex;
     flex-direction: column;
+}
+
+.imageSection .image{
+    width: 100%;
 }
 
 .hideFilterSection{
@@ -210,9 +276,7 @@ body{
 }
 
 .filterOptions li{
-
     padding-bottom:15px;
-
 }
 
 
@@ -222,6 +286,9 @@ body{
     color:#6b7072;
     font-size:13px;
     text-decoration: none;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition:  0.3s ease-out;
 }
 
 .filterOptions li a:hover{
@@ -233,7 +300,6 @@ body{
 }
 
 .socialIcons{
-    text-align: center;
     padding:28px 0 24px 0;
 }
 
@@ -244,6 +310,9 @@ body{
 
 .socialIcons li a{
     display: inline-block;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition:  0.3s ease-out;
 }
 
 .socialIcons li a:hover{
@@ -254,5 +323,19 @@ body{
     font-size: 12px;
     color:#6b7072;
     text-transform: capitalize;
-    text-align: right;
+}
+
+@media only screen and (max-width:730px) {
+
+    .navigation li a{
+        font-size:12px;
+        margin-right: 5px;
+
+    }
+
+    .accordionSection {
+        margin-right: 5px;
+        text-align: center;
+    }
+    
 }
