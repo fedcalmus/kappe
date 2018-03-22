@@ -325,17 +325,69 @@ body{
     text-transform: capitalize;
 }
 
-@media only screen and (max-width:730px) {
 
-    .navigation li a{
-        font-size:12px;
-        margin-right: 5px;
 
+@media only screen and (max-width: 1360px) and (min-width: 768px) {
+
+    .onHoverContent .devText{
+        padding: 5px 0;
     }
 
-    .accordionSection {
-        margin-right: 5px;
-        text-align: center;
+    .arrow{
+        padding-top: 25px;
     }
-    
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .imageSection{
+        width:33.33333%;
+    }
+
+    .onHoverContent .devText{
+        padding: 5px 0;
+    }
+
+    .arrow{
+        padding-top: 25px;
+    }
+    .leftSideSection{
+        width:20%;
+    }
+    .rightSideSection{
+        width:80%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+
+    .imageSection{
+        width:50%;
+    }
+    .onHoverContent .devText{
+        padding: 5px 0;
+    }
+
+    .arrow{
+        padding-top: 25px;
+    }
+    .leftSideSection{
+        width:25%;
+    }
+    .rightSideSection{
+        width:75%;
+    }
+}
+
+@media only screen and (max-width :600px) {
+    .imageSection{
+        width:100%;
+    }
+    .leftSideSection{
+        width:30%;
+    }
+    .rightSideSection{
+    width:70%;
+    }
 }
