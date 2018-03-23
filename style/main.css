@@ -342,6 +342,8 @@ body{
     opacity: 0.8;
 }
 
+#mCSB_3_dragger_vertical .mCSB_dragger_bar{ background-color: blue; }
+
 @media only screen and (max-width: 1360px){
 
     .socialIcons, .copyright{
@@ -350,7 +352,7 @@ body{
 
 }
 
-@media only screen and (max-width: 1370px) and (min-width: 768px) {
+@media only screen and (max-width: 1370px) and (min-width: 780px) {
 
     .socialIcons, .copyright{
         text-align: center;
@@ -366,22 +368,14 @@ body{
 
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 780px) {
 
     .imageSection{
-        width:33.33333%;
+        width:33.3333%;
     }
 
     .leftSideSection{
         width:20%;
-    }
-
-    .onHoverContent .devText{
-        padding: 5px 0;
-    }
-
-    .arrow{
-        padding-top: 5px;
     }
 
     .rightSideSection{
@@ -389,28 +383,6 @@ body{
         left:20%;
     }
 
-}
-
-@media only screen and (max-width: 768px) {
-    .rightSideSection{
-        width: 100%;
-        left:0;
-        cursor: pointer;
-    }
-
-    .imageSection{
-        width: 33.3333%;
-    }
-
-    .leftSideSection{
-        width:100%;
-        background-color: #242b2e;
-
-    }
-
-    .menuIcon{
-        visibility: visible;
-    }
 
     .onHoverContent .appDesign{
         font-size: 14px;
@@ -426,10 +398,31 @@ body{
         padding-top:15px;
     }
 
-
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 780px) {
+    .rightSideSection{
+        width: 100%;
+        left:0;
+        cursor: pointer;
+    }
+
+    .imageSection{
+        width: 50%;
+    }
+
+    .leftSideSection{
+        width:100%;
+        background-color: #242b2e;
+
+    }
+
+    .menuIcon{
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 780px){
     .leftSideSection{
         display:block!important;
     }
