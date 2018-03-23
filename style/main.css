@@ -351,15 +351,9 @@ body{
 
 
 
-@media only screen and (max-width: 1360px){
 
-    .socialIcons, .copyright{
-        text-align: center;
-    }
 
-}
-
-@media only screen and (max-width: 1370px) and (min-width: 780px) {
+@media only screen and (max-width: 1370px) and (min-width: 1200px) {
 
     .socialIcons, .copyright{
         text-align: center;
@@ -392,22 +386,22 @@ body{
 
 
     .onHoverContent .appDesign{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .onHoverContent .devText{
         padding: 6px 0;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .arrow{
         width: 70%;
-        padding-top:15px;
+        padding-top:6px;
     }
 
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 850px) {
     .rightSideSection{
         width: 100%;
         left:0;
@@ -420,7 +414,6 @@ body{
     .leftSideSection{
         width:100%;
         background-color: #242b2e;
-
     }
 
     .menuIcon{
@@ -428,31 +421,45 @@ body{
     }
 }
 
-@media only screen and (min-width: 780px){
+@media only screen and (min-width: 850px){
     .leftSideSection{
         display:block!important;
     }
 
 }
 
-@media only screen and (max-width: 780px) and (min-width: 405px){
+@media only screen and (max-width: 850px) and (min-width: 500px){
 
     .onHoverContent .devText{
-        padding: 4px 0;
+        padding: 10px 0;
+    }
+
+
+    .arrow{
+        width: 60%;
+        padding-top:10px;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 405px){
+
+    .onHoverContent .devText{
+        padding: 5px 0;
         font-size: 10px;
     }
 
     .onHoverContent .appDesign{
-
-        font-size: 16px;
+        font-size: 14px;
     }
+
 
     .arrow{
-        width: 70%;
-        padding-top:10px;
+        width: 60%;
+        padding-top:6px;
     }
-
 }
+
+
 
 
     @media only screen and (max-width: 405px) {
@@ -465,6 +472,7 @@ body{
     .imageSection{
         width: 100%;
     }
+
 
 }
 
