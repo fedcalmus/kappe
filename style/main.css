@@ -369,7 +369,7 @@ body{
 
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 780px) {
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
 
     .imageSection{
         width:33.3333%;
