@@ -342,7 +342,14 @@ body{
     opacity: 0.8;
 }
 
-#mCSB_3_dragger_vertical .mCSB_dragger_bar{ background-color: blue; }
+#mCSB_1_scrollbar_vertical .mCSB_dragger_bar
+
+{
+    background-color: #1ab5b3;
+}
+
+
+
 
 @media only screen and (max-width: 1360px){
 
