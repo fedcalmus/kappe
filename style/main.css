@@ -1,13 +1,4 @@
 
-@font-face {
-    font-family: "Roboto Light";
-    src: url("../fonts/roboto-light-webfont.eot");
-url("fonts/") format("woff");
-url("fonts/roboto-light-webfont.woff2") format("woff2");
-url("../fonts/roboto-light-webfont.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
 
 
 html, body, div, span, applet, object, iframe,
@@ -390,15 +381,56 @@ body{
     }
 }
 
-@media only screen and (max-width :600px) {
-    .imageSection{
-        width:100%;
+@media only screen and (max-width :600px) and (min-width: 380px) {
+    .imageSection {
+        width: 100%;
     }
-    .leftSideSection{
-        width:30%;
+
+    .leftSideSection {
+        width: 30%;
     }
-    .rightSideSection{
-    width:70%;
+
+    .rightSideSection {
+        width: 70%;
 
     }
+
+    .onHoverContent .devText {
+        padding: 5px 0;
+    }
+}
+    @media only screen and (max-width: 380px) {
+        .imageSection {
+            width: 100%;
+        }
+
+        .leftSideSection {
+            width: 50%;
+        }
+
+        .rightSideSection {
+            width: 50%;
+
+        }
+
+        .navigation li a {
+            font-size: 10px;
+            text-align: center;
+
+        }
+
+        .onHoverContent .devText {
+            padding: 0;
+            font-size: 8px
+        }
+
+        .onHoverContent .appDesign {
+            padding: 0;
+            font-size: 8px;
+        }
+
+        .arrow {
+            padding-top: 0;
+        }
+    
 }
