@@ -1,6 +1,4 @@
 
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,8 +69,10 @@ body{
     box-shadow: 0 0 55px 35px #0c0c0cd6;
     -webkit-box-shadow:0 0 55px 35px #0c0c0cd6;
     -moz-box-shadow: 0 0 55px 35px #0c0c0cd6;
-    position: relative;
+    position: fixed;
     z-index: 1;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -82,7 +82,8 @@ body{
     margin: 0;
     flex-wrap: wrap;
     align-content: flex-start;
-
+    position: relative;
+    left: 15.625%;
 }
 
 .clearAfter::after{
@@ -263,7 +264,7 @@ body{
 }
 
 .filterOptions li{
-    padding-bottom:15px;
+    padding-bottom:10px;
 }
 
 
@@ -315,6 +316,7 @@ body{
     font-size: 12px;
     color:#6b7072;
     text-transform: capitalize;
+    padding-bottom:5px;
 }
 
 @media only screen and (max-width: 1360px){
@@ -432,5 +434,9 @@ body{
         .arrow {
             padding-top: 0;
         }
-    
+
 }
+
+#mCSB_1_scrollbar_vertical .mCSB_dragger_bar{ background-color: #1ab5b3; }
+
+

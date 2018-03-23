@@ -23,10 +23,13 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!--Favicon ends here-->
 
+    <!--Custom scroll plugin -->
+    <link rel="stylesheet" href="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+
 </head>
 <body>
     <div class="mainContent clearAfter">
-        <div class="leftSideSection">
+        <div class="leftSideSection mCustomScrollbar" data-mcs-theme="minimal">
     <div class="leftSideContent">
         <div class="logoSection">
             <a href="index.html"><img src="img/logo.png"></a>
@@ -255,6 +258,19 @@
 
         </div>
     </div>
-<script type="text/javascript" src="js/main.js"></script>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".content").mCustomScrollbar();
+            });
+        })(jQuery);
+    </script>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
 </body>
 </html>
