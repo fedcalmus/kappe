@@ -72,6 +72,9 @@ body{
     z-index: 1;
     height: 100%;
     overflow-x: hidden;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition:  0.3s ease-out;
 }
 
 
@@ -174,13 +177,13 @@ body{
     display: inline-block;
     padding-top: 25px;
     cursor:pointer;
+    width:100%;
 }
 
 
 .arrowSection a{
     display: inline-block;
 }
-
 
 
 .navigation li {
@@ -254,7 +257,11 @@ body{
 }
 
 .hideFilterSection{
-    display:none;
+    display: none;
+}
+
+.hideLeftSideSection{
+   display: flex;
 }
 
 .filterOptions {
@@ -320,13 +327,26 @@ body{
     padding-bottom:5px;
 }
 
+.menuIcon {
+    z-index: 2;
+    top: 5%;
+    left: 3%;
+    color: #242b2e;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    visibility: hidden;
+}
+
+.menuIcon:hover{
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 1360px){
 
     .socialIcons, .copyright{
         text-align: center;
     }
-
-
 
 }
 
@@ -341,6 +361,7 @@ body{
 
     .arrow{
         padding-top: 5px;
+
     }
 
 }
@@ -351,7 +372,9 @@ body{
         width:33.33333%;
     }
 
-
+    .leftSideSection{
+        width:20%;
+    }
 
     .onHoverContent .devText{
         padding: 5px 0;
@@ -361,89 +384,57 @@ body{
         padding-top: 5px;
     }
 
+    .rightSideSection{
+        width: 80%;
+        left:20%;
+    }
 
 }
 
-@media only screen and (max-width: 768px) and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .rightSideSection{
+        width: 100%;
+        left:0;
+        cursor: pointer;
+    }
 
     .imageSection{
-        width:50%;
+        width: 33.3333%;
     }
+
+    .leftSideSection{
+        width:100%;
+        background-color: #242b2e;
+
+    }
+
+    .menuIcon{
+        visibility: visible;
+    }
+
+    .onHoverContent .appDesign{
+        font-size: 14px;
+    }
+
     .onHoverContent .devText{
-        padding: 5px 0;
+        padding: 6px 0;
+        font-size: 10px;
     }
 
     .arrow{
-        padding-top: 5px;
-    }
-    .leftSideSection{
-        width:25%;
-    }
-    .rightSideSection{
-        width:75%;
-        left:25%;
-    }
-}
-
-@media only screen and (max-width :600px) and (min-width: 380px) {
-    .imageSection {
-        width: 100%;
-    }
-
-    .leftSideSection {
-        width: 30%;
-    }
-
-    .rightSideSection {
         width: 70%;
-        left:30%
-
+        padding-top:15px;
     }
 
-    .onHoverContent .devText {
-        padding: 5px 0;
-    }
-}
-    @media only screen and (max-width: 380px) {
-        .imageSection {
-            width: 100%;
-        }
-
-        .leftSideSection {
-            width: 50%;
-        }
-
-        .rightSideSection {
-            width: 50%;
-            left:50%
-
-        }
-
-        .navigation li a {
-            font-size: 10px;
-            text-align: center;
-
-        }
-
-        .onHoverContent .devText {
-            padding: 0;
-            font-size: 8px
-        }
-
-        .onHoverContent .appDesign {
-            padding: 0;
-            font-size: 8px;
-        }
-
-        .arrow {
-            padding-top: 0;
-        }
 
 }
 
-#mCSB_1_scrollbar_vertical .mCSB_dragger_bar
-    {
-        background-color: #1ab5b3;
+@media only screen and (min-width: 768px){
+    .leftSideSection{
+        display:block!important;
     }
+
+}
+
 
 

@@ -32,7 +32,8 @@
 </head>
 <body>
     <div class="mainContent clearAfter">
-        <div class="leftSideSection mCustomScrollbar" data-mcs-theme="minimal">
+        <span class="menuIcon" onclick="myFunction('leftSideSection')"><i class="fas fa-bars"></i></span>
+        <div class="leftSideSection mCustomScrollbar" id="leftSideSection" data-mcs-theme="minimal">
     <div class="leftSideContent">
         <div class="logoSection">
             <a href="index.html"><img src="img/logo.png"></a>
@@ -49,7 +50,7 @@
         </ul>
     </nav>
         </div>
-        <div class="accordionSection ">
+        <div class="accordionSection">
             <div class="accordion">
                 <button onclick="myFunction('filterSection')" class="filters">
                 Filter</button>
@@ -267,11 +268,19 @@
             });
         })(jQuery);
     </script>
-
+<script>
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("hideLeftSideSection") == -1) {
+            x.className += "hideLeftSideSection";
+        } else {
+            x.className = x.className.replace("hideLeftSideSection", "");
+        }
+    }
+</script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
 
 
 </body>
