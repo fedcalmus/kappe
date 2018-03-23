@@ -381,6 +381,7 @@ body{
     }
     .rightSideSection{
         width:75%;
+        left:25%;
     }
 }
 
@@ -395,6 +396,7 @@ body{
 
     .rightSideSection {
         width: 70%;
+        left:30%
 
     }
 
@@ -413,6 +415,7 @@ body{
 
         .rightSideSection {
             width: 50%;
+            left:50%
 
         }
 
