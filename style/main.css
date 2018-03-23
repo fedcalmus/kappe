@@ -54,7 +54,6 @@ body{
     outline: none;
     margin:0;
     background-color: #242b2e;
-
 }
 
 .mainContent{
@@ -82,8 +81,10 @@ body{
     margin: 0;
     flex-wrap: wrap;
     align-content: flex-start;
+    float: right;
     position: relative;
-    left: 15.625%;
+    left:15.625%;
+
 }
 
 .clearAfter::after{
@@ -437,6 +438,9 @@ body{
 
 }
 
-#mCSB_1_scrollbar_vertical .mCSB_dragger_bar{ background-color: #1ab5b3; }
+#mCSB_1_scrollbar_vertical .mCSB_dragger_bar
+    {
+        background-color: #1ab5b3;
+    }
 
 
