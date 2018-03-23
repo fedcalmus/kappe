@@ -411,7 +411,6 @@ body{
     .rightSideSection{
         width: 100%;
         left:0;
-        cursor: pointer;
     }
 
     .imageSection{
@@ -436,5 +435,36 @@ body{
 
 }
 
+@media only screen and (max-width: 780px) and (min-width: 405px){
 
+    .onHoverContent .devText{
+        padding: 4px 0;
+        font-size: 10px;
+    }
+
+    .onHoverContent .appDesign{
+
+        font-size: 16px;
+    }
+
+    .arrow{
+        width: 70%;
+        padding-top:10px;
+    }
+
+}
+
+
+    @media only screen and (max-width: 405px) {
+
+    .rightSideSection{
+        width: 100%;
+        left:0;
+    }
+
+    .imageSection{
+        width: 100%;
+    }
+
+}
 
