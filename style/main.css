@@ -303,7 +303,8 @@ body{
 
 .menuIcon {
     z-index: 2;
-    padding: 30px 0 0 30px;
+    top:5px;
+    left:5px;
     color: #242b2e;
     font-size: 30px;
     cursor: pointer;
