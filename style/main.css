@@ -46,7 +46,9 @@ table {
     border-spacing: 0;
 }
 
-
+a{
+    display: inline-block;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -54,11 +56,19 @@ body{
     outline: none;
     margin:0;
     background-color: #242b2e;
+    color: #6b7072;
 }
 
-.mainContent{
+.container{
     display: flex;
     margin: 0;
+}
+
+.transition{
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition:  0.3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .leftSideSection{
@@ -70,9 +80,6 @@ body{
     z-index: 1;
     height: 100%;
     overflow-x: hidden;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -o-transition:  0.3s ease-out;
 }
 
 
@@ -89,7 +96,6 @@ body{
 .clearAfter::after{
     content: " ";
     clear: both;
-    /*display: block;*/
 }
 
 .imageSection{
@@ -102,7 +108,6 @@ body{
 .imageSection:hover .onHover{
     visibility: visible;
     opacity: 0.9;
-
 }
 
 .onHover{
@@ -115,16 +120,11 @@ body{
     visibility: hidden;
     line-height: 26px;
     background-color: #2db8b7;
-    transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
 }
 
 
 .onHoverContent{
 
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #ffffff;
     top: 50%;
@@ -154,12 +154,6 @@ body{
     background-color: #ffffff;
 }
 
-.logoSection a{
-    display: inline-block;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -o-transition:  0.3s ease-out;
-}
 
 .logoSection a:hover{
     opacity: 0.6;
@@ -174,11 +168,6 @@ body{
     padding-top: 25px;
     cursor:pointer;
     width:100%;
-}
-
-
-.arrowSection a{
-    display: inline-block;
 }
 
 
@@ -234,9 +223,6 @@ body{
     font-size:19px;
     outline: none;
     cursor:pointer;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -o-transition:  0.3s ease-out;
 }
 
 .filters:hover{
@@ -256,8 +242,9 @@ body{
     display: none;
 }
 
-.hideLeftSideSection{
-   display: flex;
+.showLeftSideContent{
+    display: block!important;
+
 }
 
 .filterOptions {
@@ -278,9 +265,7 @@ body{
     color:#6b7072;
     font-size:13px;
     text-decoration: none;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -o-transition:  0.3s ease-out;
+
 }
 
 .filterOptions li a:hover{
@@ -301,12 +286,6 @@ body{
     padding: 2px 2px 0 0;
 }
 
-.socialIcons li a{
-    display: inline-block;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -o-transition:  0.3s ease-out;
-}
 
 .socialIcons li img{
     width: 100%;
@@ -315,23 +294,21 @@ body{
 .socialIcons li a:hover{
     opacity: 0.8;
 }
-.copyright{
-    font-family: 'Lato', sans-serif;
+.copyright {
+
     font-size: 12px;
-    color:#6b7072;
     text-transform: capitalize;
     padding-bottom:5px;
 }
 
 .menuIcon {
     z-index: 2;
-    top: 5%;
-    left: 3%;
+    padding: 30px 0 0 30px;
     color: #242b2e;
     font-size: 30px;
     cursor: pointer;
-    position: fixed;
     visibility: hidden;
+    position: absolute;
 }
 
 .menuIcon:hover{
@@ -345,6 +322,7 @@ body{
 }
 
 
+
 @media only screen and (max-width: 1370px) and (min-width: 1200px) {
 
     .socialIcons, .copyright{
@@ -356,9 +334,7 @@ body{
 
     .arrow{
         padding-top: 5px;
-
     }
-
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 850px) {
@@ -411,13 +387,15 @@ body{
     .menuIcon{
         visibility: visible;
     }
+    .leftSideSection{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 850px){
     .leftSideSection{
         display:block!important;
     }
-
 }
 
 @media only screen and (max-width: 850px) and (min-width: 500px){
@@ -462,7 +440,5 @@ body{
     .imageSection{
         width: 100%;
     }
-
-
 }
 
