@@ -59,11 +59,9 @@ body{
 .mainContent{
     display: flex;
     margin: 0;
-    background-color: #242b2e;
 }
 
 .leftSideSection{
-    float: left;
     width: 15.625%;
     box-shadow: 0 0 55px 35px #0c0c0cd6;
     -webkit-box-shadow:0 0 55px 35px #0c0c0cd6;
@@ -84,16 +82,14 @@ body{
     margin: 0;
     flex-wrap: wrap;
     align-content: flex-start;
-    float: right;
     position: relative;
     left:15.625%;
-
 }
 
 .clearAfter::after{
     content: " ";
     clear: both;
-    display: block;
+    /*display: block;*/
 }
 
 .imageSection{
@@ -170,7 +166,7 @@ body{
 }
 
 .logoSection img{
-    width:100%;
+    max-height: 61px;
 }
 
 .arrow{
@@ -349,10 +345,6 @@ body{
 }
 
 
-
-
-
-
 @media only screen and (max-width: 1370px) and (min-width: 1200px) {
 
     .socialIcons, .copyright{
@@ -458,8 +450,6 @@ body{
         padding-top:6px;
     }
 }
-
-
 
 
     @media only screen and (max-width: 405px) {
