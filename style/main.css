@@ -1,3 +1,4 @@
+/* Reset CSS starts here */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,13 +20,13 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
-
 body {
     line-height: 1;
 }
@@ -33,45 +34,59 @@ body {
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-a{
+a {
     display: inline-block;
+    outline: none;
+    text-decoration: none;
 }
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/* Reset CSS ends here */
+
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
     outline: none;
-    margin:0;
     background-color: #242b2e;
     color: #6b7072;
 }
 
-.container{
-    display: flex;
-    margin: 0;
-}
-
-.transition{
+.transition {
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
     -o-transition:  0.3s ease-out;
     transition: 0.3s ease-out;
 }
 
-.leftSideSection{
+.leftSideSection {
     width: 15.625%;
     box-shadow: 0 0 55px 35px #0c0c0cd6;
     -webkit-box-shadow:0 0 55px 35px #0c0c0cd6;
@@ -82,8 +97,7 @@ body{
     overflow-x: hidden;
 }
 
-
-.rightSideSection{
+.rightSideSection {
     width: 84.375%;
     display: flex;
     margin: 0;
@@ -93,24 +107,24 @@ body{
     left:15.625%;
 }
 
-.clearAfter::after{
+.clearAfter::after {
     content: " ";
     clear: both;
 }
 
-.imageSection{
+.imageSection {
     line-height: 0;
     width: 25%;
     position: relative;
 
 }
 
-.imageSection:hover .onHover{
+.imageSection:hover .onHover {
     visibility: visible;
     opacity: 0.9;
 }
 
-.onHover{
+.onHover {
     position: absolute;
     top: 0;
     left: 0;
@@ -122,9 +136,7 @@ body{
     background-color: #2db8b7;
 }
 
-
-.onHoverContent{
-
+.onHoverContent {
     font-weight: 300;
     color: #ffffff;
     top: 50%;
@@ -137,39 +149,41 @@ body{
     transform: translate(-50%,-50%);
 }
 
-.onHoverContent .appDesign{
+.onHoverContent .appDesign {
     font-size: 26px;
 }
 
-.onHoverContent .devText{
+.onHoverContent .devText {
     padding:24px 0;
     font-size:12px;
     display: inline-block;
     border-bottom: 1px solid #ffffff;
 }
 
-.logoSection{
+.logoSection {
     text-align: center;
     padding: 25px 0;
     background-color: #ffffff;
 }
 
-
-.logoSection a:hover{
+.logoSection a:hover {
     opacity: 0.6;
 }
 
-.logoSection img{
+.logoSection img {
     max-height: 61px;
 }
 
-.arrow{
+.arrow {
     display: inline-block;
     padding-top: 25px;
     cursor:pointer;
     width:100%;
 }
 
+.navigation {
+    text-align: right;
+}
 
 .navigation li {
     padding: 31px 0;
@@ -182,15 +196,14 @@ body{
     -o-transition: background-color 1s ease-out;
 }
 
-.navigation li:hover{
+.navigation li:hover {
     background:linear-gradient(to left, rgb(34, 173, 172), rgb(35, 174, 172));
     background: #23AEAC;
 }
 
-.navigation li a{
+.navigation li a {
     text-decoration: none;
     color: #ffffff;
-    float: right;
     margin-right: 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -198,23 +211,17 @@ body{
     text-transform: uppercase;
 }
 
-.navigation{
-    display: flex;
-    flex-direction: column;
-}
-
-.accordionSection{
+.accordionSection {
     margin-right:25px;
     text-align: right;
 }
 
-.accordion{
+.accordion {
     padding-top: 25px;
     border-bottom: 1px solid #1e282b;
 }
 
 .filters {
-
     border: 1px solid transparent;
     background-color: transparent;
     color: #1ab5b3;
@@ -225,7 +232,7 @@ body{
     cursor:pointer;
 }
 
-.filters:hover{
+.filters:hover {
     border: 1px solid #1ab5b3;;
 }
 
@@ -238,11 +245,11 @@ body{
     width: 100%;
 }
 
-.hideFilterSection{
+.hideFilterSection {
     display: none;
 }
 
-.showLeftSideContent{
+.showLeftSideContent {
     display: block!important;
 
 }
@@ -254,12 +261,12 @@ body{
     cursor:pointer;
 }
 
-.filterOptions li{
+.filterOptions li {
     padding-bottom:10px;
 }
 
 
-.filterOptions li a{
+.filterOptions li a {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color:#6b7072;
@@ -268,36 +275,32 @@ body{
 
 }
 
-.filterOptions li a:hover{
+.filterOptions li a:hover {
     color:#ffffff;
 }
 
-.filterOptions .filterActive{
+.filterOptions .filterActive {
     color:#ffffff;
 }
 
-.socialIcons{
+.socialIcons {
     padding:28px 0 24px 0;
 }
-
 
 .socialIcons li{
     display: inline-block;
     padding: 2px 2px 0 0;
 }
 
-
 .socialIcons li img{
     width: 100%;
 }
 
-
-
 .socialIcons li a:hover{
     opacity: 0.8;
 }
-.copyright {
 
+.copyright {
     font-size: 12px;
     text-transform: capitalize;
     padding-bottom:5px;
@@ -324,8 +327,6 @@ body{
     background-color: #1ab5b3;
     font-size: 20px;
 }
-
-
 
 @media only screen and (max-width: 1370px) and (min-width: 1200px) {
 
@@ -434,7 +435,7 @@ body{
 }
 
 
-    @media only screen and (max-width: 405px) {
+@media only screen and (max-width: 405px) {
 
     .rightSideSection{
         width: 100%;
