@@ -37,8 +37,8 @@
 </head>
 <body>
     <div class="container">
-        <span class="menuIcon " onclick="navBarFunction()"><i class="fas fa-bars"></i></span>
-        <div class="leftSideSection mCustomScrollbar transition" id="leftSideSection" data-mcs-theme="minimal">
+        <span class="menuIcon" onclick="navBarFunction()"><i class="fas fa-bars"></i></span>
+        <div class="leftSideSection mCustomScrollbar transition"  data-mcs-theme="minimal">
 
         <div class="logoSection">
             <a href="index.html" class="transition"><img src="img/logo.png" alt="Logo" class="bounceIn"></a>
@@ -275,11 +275,12 @@
     </script>
 
 <script>
-    function navBarFunction() {
-        document.getElementsByClassName("leftSideSection")[0].classList.toggle("showLeftSideContent");
-    }
-
+        function navBarFunction() {
+            document.getElementsByClassName("leftSideSection")[0].classList.toggle("showLeftSideContent");
+        }
 </script>
+
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
