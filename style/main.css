@@ -100,9 +100,13 @@ body {
 .rightSideSection {
     width: 84.375%;
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-content: flex-start;
     margin: 0;
     flex-wrap: wrap;
-    align-content: flex-start;
     position: relative;
     left:15.625%;
 }
@@ -186,7 +190,7 @@ body {
 }
 
 .navigation li {
-    padding: 31px 0;
+
     margin-bottom: 1px;
     background: -moz-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
     background: -webkit-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
@@ -196,7 +200,7 @@ body {
     -o-transition: background-color 1s ease-out;
 }
 
-.navigation li:hover {
+.navigation li a:hover {
     background:linear-gradient(to left, rgb(34, 173, 172), rgb(35, 174, 172));
     background: #23AEAC;
 }
@@ -209,6 +213,8 @@ body {
     font-weight: 300;
     font-size: 18px;
     text-transform: uppercase;
+    width: 100%;
+    padding: 31px 20px;
 }
 
 .accordionSection {
@@ -234,11 +240,6 @@ body {
 
 .filters:hover {
     border: 1px solid #1ab5b3;;
-}
-
-.filterSection{
-    display: flex;
-    flex-direction: column;
 }
 
 .imageSection .image{
