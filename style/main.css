@@ -111,16 +111,10 @@ body {
     left:15.625%;
 }
 
-.clearAfter::after {
-    content: " ";
-    clear: both;
-}
-
 .imageSection {
     line-height: 0;
     width: 25%;
     position: relative;
-
 }
 
 .imageSection:hover .onHover {
@@ -153,7 +147,7 @@ body {
     transform: translate(-50%,-50%);
 }
 
-.onHoverContent .hoverHeading{
+.onHoverContent .hoverHeading {
     font-size: 26px;
 }
 
@@ -190,7 +184,6 @@ body {
 }
 
 .navigation li {
-
     margin-bottom: 1px;
     background: -moz-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
     background: -webkit-repeating-linear-gradient(#30383c, #323a3d 20%,  #2f373b 30%);
@@ -243,13 +236,14 @@ body {
     border: 1px solid #1ab5b3;;
 }
 
-.imageSection .image{
+.imageSection .image {
     width: 100%;
 }
 
 .hideFilterSection {
     display: none;
 }
+
 
 .showLeftSideContent {
     display: block!important;
@@ -291,11 +285,11 @@ body {
     padding: 2px 2px 0 0;
 }
 
-.socialIcons li img{
+.socialIcons li img {
     width: 100%;
 }
 
-.socialIcons li a:hover{
+.socialIcons li a:hover {
     opacity: 0.8;
 }
 
@@ -316,7 +310,7 @@ body {
     position: absolute;
 }
 
-.menuIcon:hover{
+.menuIcon:hover {
     opacity: 0.8;
 }
 
@@ -329,44 +323,46 @@ body {
 
 @media only screen and (max-width: 1370px) and (min-width: 1200px) {
 
-    .socialIcons, .copyright{
+    .socialIcons, .copyright {
         text-align: center;
     }
-    .onHoverContent .devText{
+
+    .onHoverContent .descText {
         padding: 5px 0;
     }
 
     .arrow{
         padding-top: 5px;
     }
+
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 850px) {
 
-    .imageSection{
+    .imageSection {
         width:33.3333%;
     }
 
-    .leftSideSection{
+    .leftSideSection {
         width:20%;
     }
 
-    .rightSideSection{
+    .rightSideSection {
         width: 80%;
         left:20%;
     }
 
 
-    .onHoverContent .appDesign{
+    .onHoverContent .appDesign {
         font-size: 18px;
     }
 
-    .onHoverContent .devText{
+    .onHoverContent .devText {
         padding: 6px 0;
         font-size: 14px;
     }
 
-    .arrow{
+    .arrow {
         width: 70%;
         padding-top:6px;
     }
@@ -392,12 +388,16 @@ body {
     .menuIcon {
         visibility: visible;
     }
-    .leftSideSection {
+    .leftSideSection
+
+
+    {
         display: none;
     }
 }
 
 @media only screen and (min-width: 850px){
+
     .leftSideSection{
         display:block!important;
     }
@@ -409,7 +409,6 @@ body {
         padding: 10px 0;
     }
 
-
     .arrow{
         width: 60%;
         padding-top:10px;
@@ -418,32 +417,33 @@ body {
 
 @media only screen and (max-width: 500px) and (min-width: 405px){
 
-    .onHoverContent .descText{
+    .onHoverContent .descText {
         padding: 5px 0;
         font-size: 10px;
     }
 
-    .onHoverContent .hoverHeading{
+    .onHoverContent .hoverHeading {
         font-size: 14px;
     }
 
 
-    .arrow{
+    .arrow {
         width: 60%;
         padding-top:6px;
     }
 }
 
-
 @media only screen and (max-width: 405px) {
 
-    .rightSideSection{
+    .rightSideSection {
         width: 100%;
         left:0;
     }
 
-    .imageSection{
+    .imageSection {
         width: 100%;
     }
+
 }
+
 
