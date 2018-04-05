@@ -153,11 +153,11 @@ body {
     transform: translate(-50%,-50%);
 }
 
-.onHoverContent .appDesign {
+.onHoverContent .hoverHeading{
     font-size: 26px;
 }
 
-.onHoverContent .devText {
+.onHoverContent .descText {
     padding:24px 0;
     font-size:12px;
     display: inline-block;
@@ -206,15 +206,16 @@ body {
 }
 
 .navigation li a {
-    text-decoration: none;
     color: #ffffff;
-    margin-right: 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
     text-transform: uppercase;
     width: 100%;
     padding: 31px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .accordionSection {
@@ -256,24 +257,21 @@ body {
 }
 
 .filterOptions {
-
-    padding-top:35px;
-    padding-bottom: 30px;
+    padding: 35px 5px;
     cursor:pointer;
 }
 
 .filterOptions li {
     padding-bottom:10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-
 .filterOptions li a {
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color:#6b7072;
     font-size:13px;
-    text-decoration: none;
-
 }
 
 .filterOptions li a:hover {
@@ -376,24 +374,25 @@ body {
 }
 
 @media only screen and (max-width: 850px) {
-    .rightSideSection{
+
+    .rightSideSection {
         width: 100%;
         left:0;
     }
 
-    .imageSection{
+    .imageSection {
         width: 50%;
     }
 
-    .leftSideSection{
+    .leftSideSection {
         width:100%;
         background-color: #242b2e;
     }
 
-    .menuIcon{
+    .menuIcon {
         visibility: visible;
     }
-    .leftSideSection{
+    .leftSideSection {
         display: none;
     }
 }
@@ -406,7 +405,7 @@ body {
 
 @media only screen and (max-width: 850px) and (min-width: 500px){
 
-    .onHoverContent .devText{
+    .onHoverContent .descText{
         padding: 10px 0;
     }
 
@@ -419,12 +418,12 @@ body {
 
 @media only screen and (max-width: 500px) and (min-width: 405px){
 
-    .onHoverContent .devText{
+    .onHoverContent .descText{
         padding: 5px 0;
         font-size: 10px;
     }
 
-    .onHoverContent .appDesign{
+    .onHoverContent .hoverHeading{
         font-size: 14px;
     }
 
